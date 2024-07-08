@@ -18,6 +18,5 @@ public enum IapErrorType: Error, Equatable, ErrorTypeProtocol {
 
     public var logMessage: String { userFriendlyMessage }
 
-//    public var userFriendlyMessage: String { "Base.IapErrorType.\(self)".localize() }
     public var userFriendlyMessage: String { "" }
 }

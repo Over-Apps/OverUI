@@ -1,5 +1,5 @@
 //
-//  Paddings.swift
+//  Padding.swift
 //
 //
 //  Created by Yunus Emre Berdibek on 8.07.2024.

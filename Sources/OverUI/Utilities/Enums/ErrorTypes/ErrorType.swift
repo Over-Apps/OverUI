@@ -18,14 +18,13 @@ public enum ErrorType: Error, Equatable, ErrorTypeProtocol {
     public var userFriendlyMessage: String {
         switch self {
         case .iapError(let error):
-            //          return "Base.IapErrorType.\(error)".localizeSafely(safe: "Base.ErrorType.general".localize())"
-            return ""
+            return LocalizationType.iapErrorType.rawValue
+
         case .networkError(let error):
-            //           return "Base.NetworkErrorType.\(error)".localizeSafely(safe: "Base.ErrorType.general".localize())"
-            return ""
+            return LocalizationType.networkErrorType.rawValue
+
         default:
-//            "return "Base.ErrorType.\(self)".localizeSafely(safe: "Base.ErrorType.general".localize())"
-          return   ""
+            return LocalizationType.errorType.rawValue
         }
     }
 }
